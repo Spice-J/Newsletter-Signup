@@ -45,7 +45,7 @@ app.post("/", function(req, res) {
 // Options for accessing mailchimp API
     const options = {
         method: 'POST',
-        auth: "SpiceCode:55a4bd45caaf0edd407fadea838979aa-us11"
+        auth: "SpiceCode:20a5d1edc2649a89a018bd757c9c86fe-us11"
     };
 
 // Request and send back data to Mailchimp
