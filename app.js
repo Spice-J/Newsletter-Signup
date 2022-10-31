@@ -1,8 +1,4 @@
 //jshint esversion: 6
-
-if (process.env.NODE_ENV !== 'production'){
-    require('dotenv').config();
-    }
     
     // Require Section
     const express = require("express");
@@ -46,14 +42,10 @@ if (process.env.NODE_ENV !== 'production'){
     // URL
         const url = "https://us11.api.mailchimp.com/3.0/lists/2321f1cc92";
     
-    // API KEY
-        const apiKey = process.env.KEY;
-    
-    
     // Options for accessing mailchimp API
         const options = {
             method: 'POST',
-            auth: "SpiceCode:" + apiKey
+            auth: "SpiceCode:068c49c78169c5a2ac9787d79430a4a3-us11"
         };
     
     // Request and send back data to Mailchimp
@@ -89,14 +81,13 @@ if (process.env.NODE_ENV !== 'production'){
     });
     
     // Server PORT Starter
-    const PORT = process.env.PORT || 3000;
-    app.listen(PORT || 3000, function() {
-        console.log("Server started on port " + PORT);
+    app.listen(process.env.PORT || 3000, function() {
+        console.log("Server started on port 3000");
     });
 
 
 // API Key
-// 55a4bd45caaf0edd407fadea838979aa-us11
+// 068c49c78169c5a2ac9787d79430a4a3-us11
 
 // List Id
 // 2321f1cc92
