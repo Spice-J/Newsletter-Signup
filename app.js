@@ -45,7 +45,7 @@
     // Options for accessing mailchimp API
         const options = {
             method: 'POST',
-            auth: "SpiceCode:068c49c78169c5a2ac9787d79430a4a3-us11"
+            auth: "SpiceCode:" + process.env.KEY
         };
     
     // Request and send back data to Mailchimp
@@ -84,13 +84,3 @@
     app.listen(process.env.PORT || 3000, function() {
         console.log("Server started on port 3000");
     });
-
-
-// API Key
-// 068c49c78169c5a2ac9787d79430a4a3-us11
-
-// List Id
-// 2321f1cc92
-
-// Endpoint URL
-// https://us11.api.mailchimp.com/3.0/
